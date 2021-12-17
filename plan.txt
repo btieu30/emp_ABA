@@ -1,9 +1,5 @@
 All of the following will be done in SearchDriver.
 
-
-We must import java.lang.Object so that we can use the timestamps.
-
-
 We will make 4 Comparable[]s using the code from the main() method in BinSearch:
 
 Comparable[] iArrX = new Integer[n];
@@ -23,9 +19,9 @@ long end;
 long timeElapsed;
 int sum = 0;
 for (int x = 0; x < 10; x++) {
-	start = currentTimeMillis();
+	start = System.currentTimeMillis();
 	binSearch(iArrX, (int)(Math.random() * iArrX.length * 2)); //or linSearch("")
-	end = currentTimeMillis(); 
+	end = System.currentTimeMillis(); 
 	timeElapsed = end - start;
 	sum += timeElapsed
 }
