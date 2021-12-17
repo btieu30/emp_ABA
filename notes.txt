@@ -1,1 +1,8 @@
+Team ABA -- Ariella Katz, Alif Rahman, Brianna Tieu, Tom, Grippy, Pepe
+APCS
 
+DISCO:
+0: We can use currentTimeMillis() to return the current time in milliseconds within our java programs.
+
+QCC: 
+0:
