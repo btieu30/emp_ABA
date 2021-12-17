@@ -1,0 +1,37 @@
+All of the following will be done in SearchDriver.
+
+
+We must import java.lang.Object so that we can use the timestamps.
+
+
+We will make 4 Comparable[]s using the code from the main() method in BinSearch:
+
+Comparable[] iArrX = new Integer[n];
+for (int i = 0; i < iArrX.length; i++) {
+	iArrX[i] = i*2;
+}
+
+We will make iArr0, iArr1, iArr2, iArr3, for n=10, n=100, n=1000, and n=10000, respectively.
+
+
+To avoid excessive use of SOP, we will only print the average time elapsed (end time - start time).
+We will call binSearch() and linSearch() 10 times each, searching for randomized targets.
+There will be a 50% chance of the target being in the array (it will either be even or odd, and it will be set up so that it will be between the minimum and maximum values of the array).
+
+long start;
+long end;
+long timeElapsed;
+int sum = 0;
+for (int x = 0; x < 10; x++) {
+	start = currentTimeMillis();
+	binSearch(iArrX, (int)(Math.random() * iArrX.length)); //or linSearch("")
+	end = currentTimeMillis(); 
+	timeElapsed = end - start;
+	sum += timeElapsed
+}
+long avgTime = sum/10;
+SOP(avgTime); //We've successfully avoided any printing between the start and end times!
+
+We can also print the difference of the avgTimes for linSearch and binSearch of the same array.
+
+We will repeat this process for iArr0-3.
