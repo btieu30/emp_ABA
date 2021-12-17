@@ -1,0 +1,7 @@
+Changes:
+- Originally, we searched for the value of the middle element of the array.
+  We first improved by increasing the randomization of the code, calling random values of the array. However, we set up Math.random() so that it would only produce values that were in the array (the target would always be found).
+  We then improved this by fully randomizing the target, so that there would be a chance of the target not being found, which is important to include in the data. We ensured that the likelihood of the target not being found would be the same for all arrays, since it takes the longest to search the entire array without finding anything, so we wanted to avoid making this time-consuming process more common for different arrays.
+- Originally, start and end were declared at the same time that they were initialized. 
+  We moved the declaration to before the loop to optimize time efficiency.
+- We added the ability to print the difference between the times for linSearch() vs. binSearch(), so that we wouldn't have to do our own calculations with longs.
