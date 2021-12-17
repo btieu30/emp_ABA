@@ -24,7 +24,7 @@ long timeElapsed;
 int sum = 0;
 for (int x = 0; x < 10; x++) {
 	start = currentTimeMillis();
-	binSearch(iArrX, (int)(Math.random() * iArrX.length)); //or linSearch("")
+	binSearch(iArrX, (int)(Math.random() * iArrX.length * 2)); //or linSearch("")
 	end = currentTimeMillis(); 
 	timeElapsed = end - start;
 	sum += timeElapsed
