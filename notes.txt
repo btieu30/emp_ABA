@@ -3,6 +3,8 @@ APCS
 
 DISCO:
 0: We can use currentTimeMillis() to return the current time in milliseconds within our java programs.
-
+1: An array length of 50000000 is too much for Java's memory.
+2: An array length of even 500000 is too short for a significant elapsed time.
+3: 
 QCC: 
 0:
