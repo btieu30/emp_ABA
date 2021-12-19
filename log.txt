@@ -5,3 +5,7 @@ Changes:
 - Originally, start and end were declared at the same time that they were initialized. 
   We moved the declaration to before the loop to optimize time efficiency.
 - We added the ability to print the difference between the times for linSearch() vs. binSearch(), so that we wouldn't have to do our own calculations with longs.
+- We realized that when we printed the difference between the times, we were calling avgTimeLin() and avgTimeBin() a second time and taking the difference of their outputs instead of taking the difference of the previous outputs. 
+  We fixed this by creating local variables long bin and long lin and setting the avgTime___s equal to them, and then printing bin, lin, and lin-bin.
+- At first, 10,000,000 seemed to be too long for the system's memory, but when we tried it later, it worked and 50,000,000 was too much. Later we tried again and 50,000,000 was ok but 100,000,000 wasn't. 
+  We arent sure why this is, but we have changed the code whenever possible to maximize the lengths of the arrays.
