@@ -9,8 +9,8 @@
 ## Results
 * For the 1,000,000-length, 5,000,000-length, 10,000,000-length, and 50,000,000-length arrays, the average elapsed times for linear search were 1, 6, 12, and 58 seconds, respectively, and the average elapsed times for binary search were 0, 0, 0, and 0 seconds, respectively.
 * The difference between the average elapsed times for linear search and binary search were 1, 6, 12, and 58 seconds, respectively.
-* Repetitions of this experiment always yielded elapsed times of 1 second for the shortest array (1,000,000) and elapsed times of 0 seconds for binary search for all arrays.
-* The average elapsed times for linear search of the other 3 arrays never differed from these results by more than a few seconds (no more than 1 second for the 5,000,000- and 10,000,000-length arrays and no more than 5 seconds for the 50,000,000-length array) and the difference between the average elapsed times for linear and binary search for the other 3 arrays also never differed from these results by the corresponding amounts.
+* Repetitions of this experiment always yielded elapsed times of 1 second for linear search for the shortest array (1,000,000) and elapsed times of 0 seconds for binary search for all arrays.
+* For repetitions of this experiment, the average elapsed times for linear search of the other 3 arrays never differed from these results by more than a few seconds (no more than 1 second for the 5,000,000- and 10,000,000-length arrays and no more than 5 seconds for the 50,000,000-length array) and the difference between the average elapsed times for linear and binary search for the other 3 arrays also never differed from these results by the corresponding amounts.
 
 ## Conclusions
 * Binary search appears to be more efficient than linear search, as it was always faster than linear search.
