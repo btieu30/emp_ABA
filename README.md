@@ -14,5 +14,5 @@
 
 ## Conclusions
 * Binary search appears to be more efficient than linear search, as it was always faster than linear search.
-* The difference in efficiency appears to become more pronounced as the length of the array being searched increases.
-* Moreover, binary search does not appear to decrease in efficiency by a significant amount as the array length increases, at least up to lengths that the system's memory can handle, since it took approximately 0 seconds for all array lengths.
+* The difference in efficiency appears to become more pronounced as the length of the array being searched increases, as the difference in average elapsed times for linear and binary search increased with array length.
+* Moreover, binary search does not appear to decrease in efficiency by a significant amount as the array length increases, at least up to lengths that the system's memory can handle, since it took approximately 0 seconds for all tested array lengths.
