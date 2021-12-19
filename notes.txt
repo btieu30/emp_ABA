@@ -5,6 +5,9 @@ DISCO:
 0: We can use currentTimeMillis() to return the current time in milliseconds within our java programs.
 1: An array length of 100,000,000 is too much for Java's memory.
 2: An array length of even 500,000 is too short for a significant elapsed time for either linear or binary search.
-3: 
+3: Increasing the amount of trials or searches in the program only increased the amount of time it takes for the program to run, but not the amount of time for BinSearch or LinSearch.
+4: As the array size increases, the difference between LinSearch and BinSearch is no longer constant.
+5: 
+
 QCC: 
-0:
+0:  
