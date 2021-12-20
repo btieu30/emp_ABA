@@ -1,3 +1,8 @@
+Team ABA - Ariella Katz, Alif Rahman, Brianna Tieu, Tom, Grippy, Pepe
+APCS
+Lab03
+2021-12-23
+
 Changes:
 - Originally, we searched for the value of the middle element of the array.
   We first improved by increasing the randomization of the code, calling random values of the array. However, we set up Math.random() so that it would only produce 
