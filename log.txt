@@ -1,13 +1,21 @@
 Changes:
 - Originally, we searched for the value of the middle element of the array.
-  We first improved by increasing the randomization of the code, calling random values of the array. However, we set up Math.random() so that it would only produce values that were in the array (the target would always be found).
-  We then improved this by fully randomizing the target, so that there would be a chance of the target not being found, which is important to include in the data. We ensured that the likelihood of the target not being found would be the same for all arrays, since it takes the longest to search the entire array without finding anything, so we wanted to avoid making this time-consuming process more common for different arrays.
+  We first improved by increasing the randomization of the code, calling random values of the array. However, we set up Math.random() so that it would only produce 
+  values that were in the array (the target would always be found).
+  We then improved this by fully randomizing the target, so that there would be a chance of the target not being found, which is important to include in the data. 
+  We ensured that the likelihood of the target not being found would be the same for all arrays, since it takes the longest to search the entire array without 
+  finding anything, so we wanted to avoid making this time-consuming process more common for different arrays.
 - Originally, start and end were declared at the same time that they were initialized. 
   We moved the declaration to before the loop to optimize time efficiency.
 - We added the ability to print the difference between the times for linSearch() vs. binSearch(), so that we wouldn't have to do our own calculations with longs.
-- We realized that when we printed the difference between the times, we were calling avgTimeLin() and avgTimeBin() a second time and taking the difference of their outputs instead of taking the difference of the previous outputs. 
+- We realized that when we printed the difference between the times, we were calling avgTimeLin() and avgTimeBin() a second time and taking the difference of their 
+  outputs instead of taking the difference of the previous outputs. 
   We fixed this by creating local variables long bin and long lin and setting the avgTime___s equal to them, and then printing bin, lin, and lin-bin.
-- We realized that array lengths as low as 10,000 would not take a significant amount of time for either binary or linear search, so we experimented with increasing array lengths as permitted by the alloted memory. We ended up with array lengths of 1,000,000, 5,000,000, 10,000,000, 50,000,000.
-- At first, 10,000,000 seemed to be too long for the system's memory, but when we tried it later, it worked and 50,000,000 was too much. Later we tried again and 50,000,000 was ok but 100,000,000 wasn't. 
+- We realized that array lengths as low as 10,000 would not take a significant amount of time for either binary or linear search, so we experimented with increasing 
+  array lengths as permitted by the alloted memory. We ended up with array lengths of 1,000,000, 5,000,000, 10,000,000, 50,000,000.
+- At first, 10,000,000 seemed to be too long for the system's memory, but when we tried it later, it worked and 50,000,000 was too much. Later we tried again and 
+  50,000,000 was ok but 100,000,000 wasn't. 
   We arent sure why this is, but we have changed the code whenever possible to maximize the lengths of the arrays.
-- We realized that we could further scale up the elapsed times being produced by multiple running searches for the exact same value for a specified number of repetitions, and then calculating the elapsed time after all repetitions. We decided to run the exact same binary/linear search for the same value 100 times and record the elapsed times after all 100 repetitions had been completed, and use these elapsed times for any further calculations. 
+- We realized that we could further scale up the elapsed times being produced by multiple running searches for the exact same value for a specified number of 
+  repetitions, and then calculating the elapsed time after all repetitions. We decided to run the exact same binary/linear search for the same value 100 times and 
+  record the elapsed times after all 100 repetitions had been completed, and use these elapsed times for any further calculations. 
