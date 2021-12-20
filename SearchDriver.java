@@ -7,7 +7,11 @@ public class SearchDriver {
     int sum = 0;
     for (int x = 0; x < 100; x++) {
 	      start = System.currentTimeMillis();
-	      BinSearch.binSearch(iArrX, (int)(Math.random() * iArrX.length * 2));
+        int random = (int) Math.random() * iArrX.length * 2;
+        for (int y = 0; y < 100; y++) {
+          BinSearch.binSearch(iArrX, random);
+        }
+
 	      end = System.currentTimeMillis();
 	      timeElapsed = end - start;
 	      sum += timeElapsed;
@@ -23,7 +27,10 @@ public class SearchDriver {
     int sum = 0;
     for (int x = 0; x < 100; x++) {
 	      start = System.currentTimeMillis();
-	      LinSearch.linSearch(iArrX, (int)(Math.random() * iArrX.length * 2));
+        int random = (int)(Math.random() * iArrX.length * 2);
+        for (int y = 0; y < 100; y++) {
+          LinSearch.linSearch(iArrX, random);
+        }
 	      end = System.currentTimeMillis();
 	      timeElapsed = end - start;
 	      sum += timeElapsed;
@@ -57,36 +64,36 @@ public class SearchDriver {
     //Finding time diff for arr.length = 100000
     bin = avgTimeBin(iArr0);
     lin = avgTimeLin(iArr0);
-    System.out.println("Average Time for BinSearch w/ length 1,000,000: " + bin);
-    System.out.println("Average Time for LinSearch w/ length 1,000,000: " + lin);
-    System.out.println("Diff btwn Bin and Lin w/ length 1,000,000: " + (lin - bin));
+    System.out.println("Average Time for 100 calls of BinSearch w/ length 1,000,000: " + bin + " milliseconds");
+    System.out.println("Average Time for 100 calls of LinSearch w/ length 1,000,000: " + lin + " milliseconds");
+    System.out.println("Diff btwn Bin and Lin w/ length 1,000,000: " + (lin - bin + " milliseconds"));
 
     System.out.println("-------------------------------------------------");
 
     //Finding time diff for arr.length = 500000
     bin = avgTimeBin(iArr1);
     lin = avgTimeLin(iArr1);
-    System.out.println("Average Time for BinSearch w/ length 5,000,000: " + bin);
-    System.out.println("Average Time for LinSearch w/ length 5,000,000: " + lin);
-    System.out.println("Diff btwn Bin and Lin w/ length 5,000,000: " + (lin - bin));
+    System.out.println("Average Time for 100 calls of BinSearch w/ length 5,000,000: " + bin + " milliseconds");
+    System.out.println("Average Time for 100 calls of LinSearch w/ length 5,000,000: " + lin + " milliseconds");
+    System.out.println("Diff btwn Bin and Lin w/ length 5,000,000: " + (lin - bin + " milliseconds"));
 
     System.out.println("-------------------------------------------------");
 
     //Finding time diff for arr.length = 100000
     bin = avgTimeBin(iArr2);
     lin = avgTimeLin(iArr2);
-    System.out.println("Average Time for BinSearch w/ length 10,000,000: " + bin);
-    System.out.println("Average Time for LinSearch w/ length 10,000,000: " + lin);
-    System.out.println("Diff btwn Bin and Lin w/ length 10,000,000: " + (lin - bin));
+    System.out.println("Average Time for 100 calls of BinSearch w/ length 10,000,000: " + bin + " milliseconds");
+    System.out.println("Average Time for 100 calls of LinSearch w/ length 10,000,000: " + lin + " milliseconds");
+    System.out.println("Diff btwn Bin and Lin w/ length 10,000,000: " + (lin - bin + " milliseconds"));
 
     System.out.println("-------------------------------------------------");
 
     //Finding time diff for arr.length = 500000
     bin = avgTimeBin(iArr3);
     lin = avgTimeLin(iArr3);
-    System.out.println("Average Time for BinSearch w/ length 50,000,000: " + bin);
-    System.out.println("Average Time for LinSearch w/ length 50,000,000: " + lin);
-    System.out.println("Diff btwn Bin and Lin w/ length 50,000,000: " + (lin - bin));
+    System.out.println("Average Time for 100 calls of BinSearch w/ length 50,000,000: " + bin + " milliseconds");
+    System.out.println("Average Time for 100 calls of LinSearch w/ length 50,000,000: " + lin + " milliseconds");
+    System.out.println("Diff btwn Bin and Lin w/ length 50,000,000: " + (lin - bin + " milliseconds"));
 
   }
 
