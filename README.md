@@ -11,6 +11,8 @@
 * The difference between the average elapsed times for linear search and binary search were 105, 585, 1243, and 6211 milliseconds, respectively.
 * Repetitions of this experiment always yielded elapsed times of 0 milliseconds for binary search for all arrays.
 * For repetitions of this experiment, the average elapsed times for linear search of the other 3 arrays never differed from these results by more than 100 milliseconds and the difference between the average elapsed times for linear and binary search for the other 3 arrays also never differed from these results by the corresponding amounts.
+![Graph](https://user-images.githubusercontent.com/90809602/146847055-fa3d4043-212c-421b-aac1-fd9054a40e6d.jpg)
+
 
 ## Conclusions
 * Binary search appears to be more efficient than linear search, as it was always faster than linear search.
