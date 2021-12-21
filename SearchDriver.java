@@ -6,7 +6,8 @@ public class SearchDriver {
     long timeElapsed;
     int sum = 0;
     for (int x = 0; x < 100; x++) {
-        int random = (int) Math.random() * iArrX.length * 2;
+	BinSearch.binSearch(iArrX, 0); 
+       int random = (int) Math.random() * iArrX.length * 2;
               start = System.currentTimeMillis();
         for (int y = 0; y < 100; y++) {
           BinSearch.binSearch(iArrX, random);
