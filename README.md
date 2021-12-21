@@ -3,6 +3,7 @@
 * Created 4 arrays total of lengths 1,000,000, 5,000,000, 10,000,000, and 50,000,000, containing consecutive multiples of 2 starting with 0.
 * Conducted 100 binary searches for the exact same value and found the elapsed time after all 100 repetitions were finished. Repeated this process for 100 different random integers between 0 and twice the array length (0 and the maximum value in the array). Followed the same process for linear search. 
   * This particular randomization guaranteed that the chance of the target not being in the array would be the same for arrays of all lengths  (50%, since there would be a 50% chance of the target being odd). This way, the results would not be skewed due to the target not being found more frequently for shorter array lengths - such an error would result in deceptively longer average times for shorter arrays.
+  * Before each set of 100 repetitions, we searched for the value 0 in the array to avoid any data inconsistencies due to lagging.
 * For each set of 100 searches, the elapsed time was found by subtracting the timestamp directly before the set 100 searches from the timestamp directly after the searches. Then, the average elapsed time for each set of 100 searches was found. For the rest of this documentation "elapsed time" refers to the elapsed time for a set of 100 searches for the same value.
 * We displayed the average elapsed times for the binary searches and linear searches for each array, as well as the difference between the average elapsed times for binary search and linear search for each array. 
 
