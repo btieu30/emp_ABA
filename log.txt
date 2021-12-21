@@ -26,3 +26,4 @@ Changes:
   record the elapsed times after all 100 repetitions had been completed, and use these elapsed times for any further calculations. 
 - We realized that it would've been more thorough to initialize the "random" variable (the target being searched for) before initializing "start" (the start time). 
   We adjusted accordingly.
+-   We added a search (binary or linear, depending on the method) for the value 0 before each set of 100 repetitions in order to avoid any data inconsistencies due to lagging. This search was not included in any of the elapsed times.
