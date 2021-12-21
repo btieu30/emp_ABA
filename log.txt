@@ -24,3 +24,5 @@ Changes:
 - We realized that we could further scale up the elapsed times being produced by multiple running searches for the exact same value for a specified number of 
   repetitions, and then calculating the elapsed time after all repetitions. We decided to run the exact same binary/linear search for the same value 100 times and 
   record the elapsed times after all 100 repetitions had been completed, and use these elapsed times for any further calculations. 
+- We realized that it would've been more thorough to initialize the "random" variable (the target being searched for) before initializing "start" (the start time). 
+  We adjusted accordingly.
