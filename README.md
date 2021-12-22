@@ -21,3 +21,8 @@
 * Moreover, binary search does not appear to decrease in efficiency by a significant amount as the array length increases, at least up to lengths that the system's memory can handle, since it took approximately 0 milliseconds for all tested array lengths.
 
 ## Gallery Tour
+* Other groups, instead of finding average time for each search, found the total time for an arbitrary number of searches (say 100). This allowed more usable numbers
+for binary search.
+* Other groups, instead of having random targets, conducted the searches with an impossible target (say -1 in an all positive array) to test for a worst possible case.
+* In all groups, there was a trend of an "initial lag" at the first binary search in an array of length 1 (ex. A binary search for an array of length 1 would take around 50 miliseconds). This seems paradoxical as the binary search for greater array lengths would take far less time (ex. A binary serach for an array of length 1_000_000 would take around 0 miliseconds). Our hypothesis is that there is an inherent start up time when running a file. To make sure that this phenomenon doesn't affect our data, we suggest to add a random call at the beginning of the file. After this call (and hopefully after this "lag"), we begin actual tests.
+* Overall, we found that all the groups supported the class' initial hypothesis that binary serach will take less time as the array length's get bigger.
